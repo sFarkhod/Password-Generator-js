@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-generator-by-sFarkhod</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="pass-container">
+
+        <div class="pass-header">
+            <div class="pass">
+                <span id="rand-pass">sFarkhod Random Pass Generator</span>
+                <button id="copy">Copy</button>
+            </div>
+        </div>
+
+        <div class="pass-body">
+
+            <div class="form-control">
+                <label for="leng">Password Length</label>
+                <input id="leng" value="15" type="number" min="2" max="30" />
+            </div>
+            
+            <div class="form-control">
+                <label for="upper">Add Uppercase Letters</label>
+                <input id="upper" type="checkbox" />
+            </div>
+            
+            <div class="form-control">
+                <label for="lower">Add Lowercase Letters</label>
+                <input id="lower" type="checkbox" />
+            </div>
+            
+            <div class="form-control">
+                <label for="number">Add Numbers</label>
+                <input id="number" type="checkbox" />
+            </div>
+            
+            <div class="form-control">
+                <label for="symbol">Add Symbols</label>
+                <input id="symbol" type="checkbox" />
+            </div>
+            
+            <button class="generate" id="generate-pass">Generate Password</button>
+
+        </div>
+    </div>
+
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>
